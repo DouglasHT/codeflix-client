@@ -1,25 +1,38 @@
 'use client';
 import React from 'react';
-import { Logo } from './Logo';
-import { UserProfile } from './UserProfile';
-import { NavLinks } from './NavLinks';
-import { useScroll } from '../hooks/useScroll';
+import logo from '../public/logo.svg';
 
 
-export default function Header() {
-  const isScrolled = useScroll();
+export default function Header(){
+    return (
+        <header
+        className='fixed
+        top-0
+        z-50
+        flex
+        w-full
+        items-center
+        justify-between
+        px-4
+        py-4
+        
+        lg:px-10
+        lg:py-6'>
+            
 
-  return (
-    <header
-      className={`${isScrolled && 'bg-black'}
-      fixed top-0 z-50
-      flex w-full items-center justify-between bg-gradient-to-t from-transparent to-black p-2 transition-all lg:px-10 lg:py-4`}
-    >
-      <div className='flex items-center space-x-2 md:space-x-8'>
-        <Logo />
-        <NavLinks />
-      </div>
-      <UserProfile />
-    </header>
-  );
+        <img src = "https://rb.gy/ulxxee"
+            alt = "netflix"
+            width={120}
+            height={120}
+            />
+            <ul>
+                <li>Home</li>
+                <li>TV Shows</li>
+                <li>Movies</li>
+                <li>New & Popular</li>
+                <li>My List</li>
+            </ul>
+
+            </header>
+    )
 }
