@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import profile from "../../public/profile.png";
+import profile from "../../../public/profile.png";
 
 // eslint-disable-next-line react/display-name
 export const UserProfile = React.memo(() => {
