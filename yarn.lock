@@ -2491,6 +2491,11 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+heroicons@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/heroicons/-/heroicons-2.1.1.tgz#b574c2d87bc504bf7f4fefacc20960c5672b0202"
+  integrity sha512-54kHbrxsTyAJJU7z07XN1OrVBX8ogN/tbclP8Doxk0X4IQmR6LEhLzJBkFK9Yc814NoXG6ZJBh9Bi/qvauzjfA==
+
 html-encoding-sniffer@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/html-encoding-sniffer/-/html-encoding-sniffer-3.0.0.tgz#2cb1a8cf0db52414776e5b2a7a04d5dd98158de9"
