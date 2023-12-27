@@ -1,4 +1,4 @@
-import { PlayIcon } from "@heroicons/react/24/outline";
+import { InformationCircleIcon, PlayIcon } from "@heroicons/react/24/outline";
 import { Movie } from "app/types/movie";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,6 +37,7 @@ export const Banner = ({ movie }: { movie: Movie }) => (
 				</button>
 			</Link>
 			<button className="md:text-xl; flex cursor-pointer items-center gap-x-2 rounded bg-gray-600 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5">
+				<InformationCircleIcon className="h-6" />
 				More Info
 			</button>
 		</div>
