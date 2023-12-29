@@ -1,10 +1,10 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-	experimental: {
-		appDir: true,
-	},
+	/* config options here */
 	images: {
-		domains: ["m.media-amazon.com"],
+		remotePatterns: [{ protocol: "https", hostname: "m.media-amazon.com" }],
 	},
 };
 
