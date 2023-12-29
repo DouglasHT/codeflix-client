@@ -1,6 +1,6 @@
 ## Description
 
-[Next](https://nextjs.org/) framework TypeScript starter repository.
+A clone of a important service of streaming
 
 ## Installation
 
