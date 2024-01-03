@@ -1,9 +1,14 @@
 import Header from "@/app/components/Header";
+import Player from "@/app/components/Player";
 import { getMovieById } from "@/app/service/MovieService";
+import React from "react";
 
 interface IWatchProps {
-	params: { id: string };
+	params: {
+		id: string;
+	};
 }
+
 export default async function Watch({ params }: IWatchProps) {
 	const movie = await getMovieById(params.id);
 
@@ -18,9 +23,5 @@ export default async function Watch({ params }: IWatchProps) {
 		);
 	}
 
-	return (
-		<div>
-			<h1>Watch: {params.id}</h1>
-		</div>
-	);
+	return <Player movie={movie} />;
 }
