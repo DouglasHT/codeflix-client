@@ -1,7 +1,7 @@
-import { ChevronDownIcon, PlayIcon, PlusIcon, SpeakerWaveIcon, UserGroupIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
-import { MovieRating } from "./MovieRating";
 import { Movie } from "../types/movie";
+import Link from "next/link";
+import { ChevronDownIcon, PlayIcon, PlusIcon, SpeakerWaveIcon, UserGroupIcon } from "@heroicons/react/24/outline";
+import { MovieRating } from "./MovieRating";
 
 export const MovieInfo = ({ movie }: { movie: Movie }) => (
 	<div className="absolute z-10 w-full rounded-b-md bg-zinc-800 p-2 shadow-md transition lg:p-4 ">
